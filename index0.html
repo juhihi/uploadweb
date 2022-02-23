@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab12</title>
+    <style>
+        .container{
+            position: relative;
+            top: 30px;
+            width: 80%;
+            margin: 0 auto;
+            height: 500px;
+            border: 2px double blue;
+            box-shadow: 5px 5px 15px red;
+        }
+        .container>iframe{
+            width: 75%;
+            height: 95%;
+            float: left;
+            padding-top: 20px;
+        }
+        .container>.anh-poster{
+            width: 22%;
+            height: 100%;
+            float: right;
+            padding: 8px 20px 8px 5px;
+        }
+        .container>.anh-poster>a{
+            text-decoration: none;  
+            height: 150px;
+            padding: 5px;
+        }
+        .container>.anh-poster>a>img{
+            width: 100%;
+            height: 150px;
+            padding: 5px;
+        }
+        .container>.anh-poster>a>img:hover{
+            box-shadow: 5px 5px 20px blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <iframe src="index2.html" name="man-anh"></iframe>
+        <div class="anh-poster">
+            <a href="index2.html" target="man-anh">
+                <img src="tron.jpg" alt="">
+            </a>
+            <a href="index3.html" target="man-anh">
+                <img src="may.jpg" alt="">
+            </a>
+            <a href="index4.html" target="man-anh">
+                <img src="sutu.jpg" alt="">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
